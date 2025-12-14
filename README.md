@@ -29,7 +29,7 @@ If you're using Docker:
 docker run --rm \
   -v "$(pwd):/app" \
   --user "$(id -u):$(id -g)" \
-  ghcr.io/sowtag/getignore:master <language>
+  ghcr.io/sowtag/getignore:latest <language>
 ```
 
 If you're using Podman (note on Fedora/other SELinux-protected systems you must add :Z to the volume mount, leaving you 
@@ -37,7 +37,7 @@ with `-v $(pwd):/app:Z`):
 ```shell
 podman run --rm \
   -v "$(pwd):/app" \
-  ghcr.io/sowtag/getignore:master <language>
+  ghcr.io/sowtag/getignore:latest <language>
 ```
 
 ## Disclaimer
