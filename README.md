@@ -5,6 +5,7 @@ Small, simple utility to download [GitHub's .gitignore templates](https://github
 ready and should be seen just as a simple developer utility. Lots of `panic()`s that shouldn't be used in production!
 
 * [Usage](#usage)
+* [Running on Docker](#running-on-docker)
 * [Disclaimer](#disclaimer)
 
 ## Usage
@@ -19,6 +20,25 @@ I recommend compiling this yourself and placing the binary somewhere on your `$P
 ![](assets/successful-gitignore-fetch-result.png)
 
 Note that language templates are case-insensitive, meaning `java == JAVA == Java`, etc.
+
+## Running on Docker
+This utility can be executed from Docker/Podman if you're on a Linux environment (or any environment targeted by `GOOS=linux`).
+
+If you're using Docker:
+```shell
+docker run --rm \
+  -v "$(pwd):/app" \
+  --user "$(id -u):$(id -g)" \
+  ghcr.io/sowtag/getignore:master <language>
+```
+
+If you're using Podman (note on Fedora/other SELinux-protected systems you must add :Z to the volume mount, leaving you 
+with `-v $(pwd):/app:Z`):
+```shell
+podman run --rm \
+  -v "$(pwd):/app" \
+  ghcr.io/sowtag/getignore:master <language>
+```
 
 ## Disclaimer
 This utility uses GitHub's anonymous API. Given that the main use I'll give it is very sporadic, I haven't bothered to 
