@@ -2,7 +2,7 @@
 Small, simple utility to download [GitHub's .gitignore templates](https://github.com/github/gitignore) to the current directory.
 
 **NOTE:** This is a quick utility I wrote to solve a slight annoyance I was regularly facing. It's definitely NOT production
-ready and should be seen just as a simple developer utility. Lots of `panic()`s that shouldn't be used in production!
+ready and should be seen just as a simple developer utility. Lots of `panic()`s that shouldn't be used in production! This is a developer tool where fail-fast was considered acceptable behavior.
 
 * [Usage](#usage)
 * [Running on Docker](#running-on-docker)
