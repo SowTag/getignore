@@ -1,4 +1,4 @@
-module getignore
+module github.com/SowTag/getignore
 
 go 1.25
 
