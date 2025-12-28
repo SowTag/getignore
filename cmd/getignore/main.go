@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"getignore/internal/getignore"
-	"getignore/internal/getignore/utils"
 	"os"
 	"path/filepath"
+
+	"github.com/SowTag/getignore/internal/getignore"
+	"github.com/SowTag/getignore/internal/getignore/utils"
 )
 
 func main() {
