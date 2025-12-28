@@ -9,6 +9,9 @@ ready and should be seen just as a simple developer utility. Lots of `panic()`s 
 * [Disclaimer](#disclaimer)
 
 ## Usage
+
+Update: This CLI tool can easily be installed if you have Go using `go install github.com/SowTag/getignore/cmd/getignore@latest`. This will automatically download, compile and place getignore in your `$PATH`. Happy ignoring!
+
 I recommend compiling this yourself and placing the binary somewhere on your `$PATH`. Assuming the compiled binary name is `getignore`:
 
 * `getignore` will show the program's correct usage and fetch a list of available .gitignore templates
